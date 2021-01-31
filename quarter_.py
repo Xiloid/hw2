@@ -10,17 +10,15 @@
             III |    IV
                 |
 """
-x = input('Введите X: ')
 try:
-    x = int(x)
+    x = float(input('Введите X: '))
+    y = float(input('Введите Y: '))
 except ValueError:
     exit('Введено НЕ число!')
-y = input('Введите Y: ')
 try:
     y = int(y)
 except ValueError:
     exit('Введено НЕ число!')
-
 if x > 0 and y > 0:
     print('I-я четверть')
 elif x < 0 and y > 0:
