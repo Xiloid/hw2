@@ -17,7 +17,6 @@ try:
     second_digit = float(second_digit)
 except ValueError:
     exit('Введено не число!')
-
 result = None
 if operator == '+':
     result = first_digit + second_digit
