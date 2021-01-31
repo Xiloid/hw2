@@ -4,26 +4,20 @@
     Выводит стороны и текст, существует треугольник или нет.
     * у треугольника каждая сторона меньше суммы двух других сторон
 """
-a = input('сторона А: ')
+a = b = c = 0
 try:
-    a = int(a)
+    a = float(input('сторона А: '))
+    b = float(input('сторона B: '))
+    c = float(input('сторона C: '))
 except ValueError:
-    exit('Введено не целое число!')
-b = input('сторона B: ')
-try:
-    b = int(b)
-except ValueError:
-    exit('Введено не целое число!')
-c = input('сторона C: ')
+    exit('Введено НЕ число!')
 try:
     c = int(c)
 except ValueError:
     exit('Введено не целое число!')
-
 if a + b > c and a + c > b and b + c > a:
-    print('Со сторонами: ', 'AB:', a + b, 'BC:', b + c, 'CA:', c + a)
+    print('Со сторонами: ', '\nAB:', a + b, '\nBC:', b + c, '\nCA:', c + a)
     print("Треугольник существует!")
 else:
-    print('Со сторонами: ', 'AB:', a + b, 'BC:', b + c, 'CA:', c + a)
+    print('Со сторонами: ', '\nAB:', a + b, '\nBC:', b + c, '\nCA:', c + a)
     print("Треугольник не существует!")
-
